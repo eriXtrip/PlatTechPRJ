@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <style>
+        body {
+            margin: 0;
+            width: 100%;
+            background-color: #352b1f;
+            color: #2f2f2f;
+        }
+
+        header {
+            background: #444c3c;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+            width: 100%;
+            height: 50px;
+            margin-bottom: 0px;
+            }
+
+        .cart-container {
+            width: 1100px;
+            margin: 20px auto;
+            background-color: #e3dddd; 
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cart-item {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .product-image {
+            max-width: 100px;
+            max-height: 100px;
+            margin-right: 10px;
+        }
+
+        .product-details {
+            flex-grow: 1;
+        }
+
+        .product-name {
+            font-weight: bold;
+        }
+
+        .product-price {
+            color: #ff5722;
+            font-weight: bold;
+        }
+
+        .cart-total {
+            margin-top: 50px;
+            text-align: right;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .checkout-btn {
+            background-color: #714a0c;
+            color: #fff;
+            margin-top: 10px;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .NavBar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-top: 10px;
+            padding-bottom: 0%;
+            }
+
+        nav a {
+            text-decoration: none;
+            font-size: large;
+            color: #ffffff;
+            margin: 0 10px;
+            }
+
+        nav a:hover {
+            color: #be9661;
+            }
+        
+        .checkout-btn:hover {
+            background-color: #5a3910;
+        }
+        .quantity {
+            font-size: large;
+            color:#5a3910;
+        }
+    </style>
+</head>
+<body>
+
+ <header>
+        <nav class="NavBar">
+            <table class="NAVButton">
+                <tr>
+                    <td><a href="homePage.html">Home</a></td>
+                    <td><a href="homePage.html#Aboutus">About Us</a></td>
+                    <td><a href="homePage.html#footer">Service</a></td>
+                    <td><a href="homePage.html#products">Products</a></td>
+                    <td><a href="homePage.html#footer">Contact Us</a></td>
+                    <td><a href="orders.html">Orders</a></td>
+                </tr>
+            </table>
+        </nav>
+    </header>
+
+<div class="cart-container">
+    <div class="cart-item">
+        <img class="product-image" src="featured1.png" alt="Product Image">
+        <div class="product-details">
+            <div class="product-name">MUNING</div>
+            <div class="product-price">Php 125.00</div>
+        </div>
+        <div class="quantity">Quantity: 2</div>
+    </div>
+
+    <div class="cart-item">
+        <img class="product-image" src="new1.png" alt="Product Image">
+        <div class="product-details">
+            <div class="product-name">PUNSO</div>
+            <div class="product-price">Php 110.00</div>
+        </div>
+        <div class="quantity">Quantity: 4</div>
+    </div>
+
+    <div class="cart-item">
+        <img class="product-image" src="featured2.png" alt="Product Image">
+        <div class="product-details">
+            <div class="product-name">DAGAT</div>
+            <div class="product-price">Php 100.00</div>
+        </div>
+        <div class="quantity">Quantity: 1</div>
+    </div>
+
+    <div class="cart-item">
+        <img class="product-image" src="new2.png" alt="Product Image">
+        <div class="product-details">
+            <div class="product-name">BITUIN SA DAGAT</div>
+            <div class="product-price">Php 150.00</div>
+        </div>
+        <div class="quantity">Quantity: 1</div>
+    </div>
+
+    <div class="cart-total">
+        <div>Total: Php 715.00</div>
+        <button class="checkout-btn">Checkout</button>
+    </div>
+</div>
+
+</body>
+</html>
